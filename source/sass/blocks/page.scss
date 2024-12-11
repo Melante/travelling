@@ -1,0 +1,20 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.page__header,
+.page__footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.page__main {
+  flex-grow: 1;
+}
