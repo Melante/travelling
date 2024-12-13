@@ -1,0 +1,306 @@
+.hero {
+  min-width: 0; // отключаем действие flex на swiper
+  background-image: linear-gradient(142deg, rgba(63, 71, 93, 1) 0%, rgba(104, 118, 145, 1) 34%, rgba(114, 135, 158, 1) 65%);
+}
+
+.hero__swiper.swiper {
+  max-width: 1600px;
+  background-image: linear-gradient(142deg, rgba(75, 94, 149, 1) 0%, rgba(95, 130, 196, 1) 34%, rgba(130, 164, 201, 1) 65%);
+}
+
+.hero__slide.swiper-slide {
+  height: 568px;
+  text-align: center;
+  color: var(--text-secondary, #ffffff);
+
+  @media (min-width: $tablet-width) {
+    height: 1034px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1600px;
+    height: 800px;
+    text-align: left;
+  }
+}
+
+.hero__slide.swiper-slide::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  background-image: var(--overlay-slide, linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.33) 100%));
+}
+
+.hero__img {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1600px;
+  height: 568px;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 1034px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 800px;
+  }
+}
+
+
+// .hero__slide--one.swiper-slide {
+//   background-image:
+//     var(--overlay-slide, linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.33) 100%)),
+//     image-set(url("../../img/hero/hero1-mobile@1x.webp") type("image/webp") 1x,
+//     url("../../img/hero/hero1-mobile@2x.webp") type("image/webp") 2x,
+//     url("../../img/hero/hero1-mobile@1x.jpg") type("image/jpg") 1x,
+//     url("../../img/hero/hero1-mobile@2x.jpg") type("image/jpg") 2x);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: bottom;
+
+//   @media (min-width: $tablet-width) {
+//     background-image:
+//       var(--overlay-slide, linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.33) 100%)),
+//       image-set(url("../../img/hero/hero1-tablet@1x.webp") type("image/webp") 1x,
+//       url("../../img/hero/hero1-tablet@2x.webp") type("image/webp") 2x,
+//       url("../../img/hero/hero1-tablet@1x.jpg") type("image/jpg") 1x,
+//       url("../../img/hero/hero1-tablet@2x.jpg") type("image/jpg") 2x);
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     background-image:
+//       var(--overlay-slide, linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.33) 100%)),
+//       image-set(url("../../img/hero/hero1-desktop@1x.webp") type("image/webp") 1x,
+//       url("../../img/hero/hero1-desktop@2x.webp") type("image/webp") 2x,
+//       url("../../img/hero/hero1-desktop@1x.jpg") type("image/jpg") 1x,
+//       url("../../img/hero/hero1-desktop@2x.jpg") type("image/jpg") 2x);
+//   }
+// }
+
+// .hero__slide--two.swiper-slide {
+//   background-image:
+//     var(--overlay-slide, linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.33) 100%)),
+//     image-set(url("../../img/hero/hero2-mobile@1x.webp") type("image/webp") 1x,
+//     url("../../img/hero/hero2-mobile@2x.webp") type("image/webp") 2x,
+//     url("../../img/hero/hero2-mobile@1x.jpg") type("image/jpg") 1x,
+//     url("../../img/hero/hero2-mobile@2x.jpg") type("image/jpg") 2x);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: bottom;
+
+//   @media (min-width: $tablet-width) {
+//     background-image:
+//       var(--overlay-slide, linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.33) 100%)),
+//       image-set(url("../../img/hero/hero2-tablet@1x.webp") type("image/webp") 1x,
+//       url("../../img/hero/hero2-tablet@2x.webp") type("image/webp") 2x,
+//       url("../../img/hero/hero2-tablet@1x.jpg") type("image/jpg") 1x,
+//       url("../../img/hero/hero2-tablet@2x.jpg") type("image/jpg") 2x);
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     background-image:
+//       var(--overlay-slide, linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.33) 100%)),
+//       image-set(url("../../img/hero/hero2-desktop@1x.webp") type("image/webp") 1x,
+//       url("../../img/hero/hero2-desktop@2x.webp") type("image/webp") 2x,
+//       url("../../img/hero/hero2-desktop@1x.jpg") type("image/jpg") 1x,
+//       url("../../img/hero/hero2-desktop@2x.jpg") type("image/jpg") 2x);
+//   }
+// }
+
+// .hero__slide--three.swiper-slide {
+//   background-image:
+//     var(--overlay-slide, linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.33) 100%)),
+//     image-set(url("../../img/hero/hero3-mobile@1x.webp") type("image/webp") 1x,
+//     url("../../img/hero/hero3-mobile@2x.webp") type("image/webp") 2x,
+//     url("../../img/hero/hero3-mobile@1x.jpg") type("image/jpg") 1x,
+//     url("../../img/hero/hero3-mobile@2x.jpg") type("image/jpg") 2x);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: bottom;
+
+//   @media (min-width: $tablet-width) {
+//     background-image:
+//       var(--overlay-slide, linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.33) 100%)),
+//       image-set(url("../../img/hero/hero3-tablet@1x.webp") type("image/webp") 1x,
+//       url("../../img/hero/hero3-tablet@2x.webp") type("image/webp") 2x,
+//       url("../../img/hero/hero3-tablet@1x.jpg") type("image/jpg") 1x,
+//       url("../../img/hero/hero3-tablet@2x.jpg") type("image/jpg") 2x);
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     background-image:
+//       var(--overlay-slide, linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.33) 100%)),
+//       image-set(url("../../img/hero/hero3-desktop@1x.webp") type("image/webp") 1x,
+//       url("../../img/hero/hero3-desktop@2x.webp") type("image/webp") 2x,
+//       url("../../img/hero/hero3-desktop@1x.jpg") type("image/jpg") 1x,
+//       url("../../img/hero/hero3-desktop@2x.jpg") type("image/jpg") 2x);
+//   }
+// }
+
+.hero__container {
+  position: absolute;
+  bottom: 160px;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    bottom: 402px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 80px;
+  }
+}
+
+.hero h2 {
+  font-family: var(--font-basic, --font-basic);
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 77px;
+    min-width: 780px;
+    max-width: 80%;
+    margin-bottom: 25px;
+  }
+}
+
+.hero p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.33;
+  font-weight: 400;
+  margin-bottom: 61px;
+  max-height: 150px;
+  overflow: scroll;
+
+  @media (min-width: $tablet-width) {
+    min-width: 400px;
+    max-width: 70%;
+    max-height: 400px;
+    font-size: 17px;
+    line-height: 1.41;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 470px;
+    max-width: 35%;
+    max-height: 215px;
+    text-align: start;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+}
+
+.hero__button {
+  min-width: 180px;
+  max-width: 50%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 20px;
+  color: var(--text-secondary, #ffffff);
+  border: none;
+  background-color: var(--back-primary, #0266c1);
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 134px;
+  }
+}
+
+.hero__details {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.hero__details p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 155px;
+  max-width: 200px;
+  margin: 0;
+  padding: 13px 19px;
+  font-size: 12px;
+  line-height: 1.33;
+  border: 1px solid var(--border-light, rgba(255, 255, 255, 0.5));
+  overflow: overlay;
+}
+
+.hero__duration::before,
+.hero__level::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+
+.hero__duration::before {
+  mask-image: url("/__spritemap#sprite-moon-view");
+  background-color: var(--border, #ffffff);
+}
+
+.hero__level::before {
+  mask-image: url("/__spritemap#sprite-level-view");
+  background-color: var(--border, #ffffff);
+}
+
+.hero__pagination.swiper-pagination {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  top: auto;
+  bottom: -323px;
+  margin-bottom: 32px;
+  max-width: 1600px;
+
+  @media (min-width: $tablet-width) {
+    bottom: -771px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    justify-content: end;
+    bottom: -393px;
+    margin-left: -116px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--border, #ffffff);
+  background-color: transparent;
+  opacity: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--border, #ffffff);
+}
+

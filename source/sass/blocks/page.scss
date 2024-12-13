@@ -9,6 +9,12 @@
   min-height: 100vh;
 }
 
+.page__body-menu {
+  overflow: hidden;
+  background-color: var(--overlay-body, rgba(45, 56, 63, 0.6));
+  z-index: 2;
+}
+
 .page__header,
 .page__footer {
   flex-grow: 0;

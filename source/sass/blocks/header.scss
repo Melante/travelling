@@ -148,6 +148,7 @@
   margin: 0;
   margin-right: -15px;
   list-style-type: none;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     top: 80px;
