@@ -1,0 +1,199 @@
+.process__title {
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-bottom: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    margin-bottom: 27px;
+  }
+}
+
+.process__list {
+  display: grid;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    gap: 104px 132px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "map   mountain"
+      "boots tree";
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 243px);
+
+    gap: 10px;
+    grid-template-areas: none;
+    margin-left: 10px;
+  }
+}
+
+
+.process__item {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 16px;
+  }
+}
+
+
+.process__item--map {
+  @media (min-width: $tablet-width) {
+    grid-area: map;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: auto;
+  }
+}
+
+.process__item--boots {
+  @media (min-width: $tablet-width) {
+    grid-area: boots;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: auto;
+  }
+}
+
+.process__item--tree {
+  @media (min-width: $tablet-width) {
+    grid-area: tree;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: auto;
+  }
+}
+
+.process__item--mountain {
+  @media (min-width: $tablet-width) {
+    grid-area: mountain;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: auto;
+  }
+}
+
+.process__item::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  left: 0;
+  top: 12px;
+  background-color: var(--back-primary, #0266c1);
+
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    left: 10px;
+    top: auto;
+    bottom: 0;
+  }
+}
+
+.process__item::after {
+  content: "";
+  position: absolute;
+  border-left: 2px solid var(--back-primary, #0266c1);
+  width: 1px;
+  bottom: -40px;
+  left: 6px;
+  top: 20px;
+
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    width: 409px;
+    height: 1px;
+    border-left: none;
+    border-bottom: 2px solid var(--back-primary, #0266c1);
+    bottom: 6px;
+    top: auto;
+    left: 22px;
+    right: 22px;
+  }
+}
+
+.process__item:last-child::after {
+  content: none;
+
+  @media (min-width: $desktop-width) {
+    content: "";
+  }
+}
+
+.process__description {
+  display: flex;
+  gap: 9px;
+  width: 80%;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+  margin-left: 29px;
+
+  @media (min-width: $tablet-width) {
+    width: 90%;
+    font-size: 14px;
+    line-height: 1.57;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 94%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
+.process__description::before {
+  content: "";
+  display: block;
+  margin-top: 2px;
+  min-width: 25px;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.process__description--map::before {
+  background-image: url("/__spritemap#sprite-map-view");
+}
+
+.process__description--boots::before {
+  background-image: url("/__spritemap#sprite-boots-view");
+}
+
+.process__description--tree::before {
+  background-image: url("/__spritemap#sprite-tree-view");
+}
+
+.process__description--mountain::before {
+  background-image: url("/__spritemap#sprite-mountain-view");
+}

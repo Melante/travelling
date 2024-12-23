@@ -23,6 +23,8 @@
 }
 
 .tours__title {
+  position: relative;
+  min-width: 70%;
   font-size: 22px;
   line-height: 1;
   font-weight: 800;
@@ -40,9 +42,12 @@
   }
 }
 
-.tours__title-back {
+.tours__title::before {
+  content: attr(data-title);
+  display: block;
   position: absolute;
-  top: -20px;
+  top: -16px;
+  left: 0;
   font-size: 26px;
   line-height: 1;
   font-weight: 800;
@@ -129,17 +134,16 @@
 
 .tours__swiper.swiper {
   margin: 0 auto;
-  width: 290px;
+  min-width: 290px;
   padding-bottom: 35px;
 
 
   @media (min-width: $tablet-width) {
-    width: 678px;
     padding-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    max-width: 1200px;
     padding-bottom: 64px;
   }
 }
@@ -150,19 +154,14 @@
 
 
 .tours__slide.swiper-slide {
-  width: 290px;
+  min-width: 290px;
   height: 416px;
   text-align: center;
   color: var(--text-secondary, #ffffff);
   overflow: hidden;
 
-  @media (min-width: $tablet-width) {
-    flex-basis: 330px;
-  }
-
   @media (min-width: $desktop-width) {
-    flex-basis: 380px;
-    max-width: 1600px;
+    max-width: 380px;
   }
 }
 

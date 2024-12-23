@@ -1,15 +1,15 @@
 import Swiper from 'swiper';
 import 'swiper/css';
-import {Navigation, Keyboard} from 'swiper/modules';
+import {Navigation, Pagination, Keyboard} from 'swiper/modules';
 
 
-const toursSwiper = new Swiper('.tours__swiper', {
-  modules: [Navigation, Keyboard],
+const toursSwiper = new Swiper('.trainer__swiper', {
+  modules: [Navigation, Pagination, Keyboard],
   direction: 'horizontal',
   speed: 500,
   navigation: {
-    nextEl: '.tours__next',
-    prevEl: '.tours__prev',
+    nextEl: '.trainer__next',
+    prevEl: '.trainer__prev',
   },
   breakpoints: {
     320: {
@@ -17,13 +17,13 @@ const toursSwiper = new Swiper('.tours__swiper', {
       spaceBetween:15,
     },
     768: {
-      slidesPerView: 2,
-      spaceBetween:18,
+      slidesPerView: 3,
+      spaceBetween:20,
 
     },
     1366: {
-      slidesPerView: 3,
-      spaceBetween:30,
+      slidesPerView: 4,
+      spaceBetween:20,
       keyboard: {
         enabled: true,
         onlyInViewport: true,

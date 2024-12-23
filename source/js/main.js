@@ -6,3 +6,4 @@
 import './burger-menu.js';
 import './hero-swiper.js';
 import './tours-swiper.js';
+import './trainer-swiper.js';

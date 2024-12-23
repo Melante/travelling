@@ -1,0 +1,78 @@
+.training {
+  padding-top: 37px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 142px;
+  }
+}
+
+.training > p {
+  margin: 0;
+  padding-bottom: 29px;
+  font-size: 14px;
+  line-height: 1.43;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 62px;
+    max-width: 70%;
+  }
+}
+
+.training__title {
+  position: relative;
+  min-width: 70%;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 800;
+  margin: 0;
+  padding-bottom: 33px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    padding-bottom: 32px;
+  }
+}
+
+.training__title::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 800;
+  color: var(--text-primary, #2d383f);
+  opacity: 0.03;
+
+  @media (min-width: $tablet-width) {
+    top: -15px;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -17px;
+    font-size: 55px;
+  }
+}
+
+
+.training__trainer {
+  padding: 0;
+}

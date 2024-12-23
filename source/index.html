@@ -47,7 +47,7 @@
     <section class="hero" data-test="hero">
       <div class="hero__swiper swiper">
         <div class="hero__wrapper swiper-wrapper">
-          <div class="hero__slide hero__slide--one swiper-slide">
+          <div class="hero__slide hero__slide--one swiper-slide" tabindex="0" lazy="true">
             <picture>
               <source srcset="img/hero/hero1-desktop@1x.webp 1x, img/hero/hero1-desktop@2x.webp 2x" width="1440" height="800" type="image/webp" media="(min-width: 1440px)">
               <source srcset="img/hero/hero1-tablet@1x.webp 1x, img/hero/hero1-tablet@2x.webp 2x" width="768" height="1034" type="image/webp" media="(min-width: 768px)">
@@ -55,7 +55,7 @@
 
               <source srcset="img/hero/hero1-desktop@1x.jpg 1x, img/hero/hero1-desktop@2x.jpg 2x" width="1440" height="800" type="image/jpg" media="(min-width: 768px)">
               <source srcset="img/hero/hero1-tablet@1x.jpg 1x, img/hero/hero1-tablet@2x.jpg 2x" width="768" height="1034" type="image/jpg" media="(min-width: 768px)">
-              <img class="hero__img" src="img/hero/hero1-mobile@1x.jpg" srcset="img/hero/hero1-mobile@2x.jpg 2x" width="320" height="568" alt="Изображение гор на Кавказе">
+              <img class="hero__img" src="img/hero/hero1-mobile@1x.jpg" srcset="img/hero/hero1-mobile@2x.jpg 2x" width="320" height="568" alt="Изображение гор на Кавказе" loading="lazy">
             </picture>
             <div class="hero__container wrapper">
               <h2>Захватывающие вершины Кавказа</h2>
@@ -70,7 +70,7 @@
               </div>
             </div>
           </div>
-          <div class="hero__slide hero__slide--two swiper-slide">
+          <div class="hero__slide hero__slide--two swiper-slide" tabindex="0" lazy="true">
             <picture>
               <source srcset="img/hero/hero2-desktop@1x.webp 1x, img/hero/hero2-desktop@2x.webp 2x" width="1440" height="800" type="image/webp" media="(min-width: 1440px)">
               <source srcset="img/hero/hero2-tablet@1x.webp 1x, img/hero/hero2-tablet@2x.webp 2x" width="768" height="1034" type="image/webp" media="(min-width: 768px)">
@@ -78,7 +78,7 @@
 
               <source srcset="img/hero/hero2-desktop@1x.jpg 1x, img/hero/hero2-desktop@2x.jpg 2x" width="1440" height="800" type="image/jpg" media="(min-width: 768px)">
               <source srcset="img/hero/hero2-tablet@1x.jpg 1x, img/hero/hero2-tablet@2x.jpg 2x" width="768" height="1034" type="image/jpg" media="(min-width: 768px)">
-              <img class="hero__img" src="img/hero/hero2-mobile@1x.jpg" srcset="img/hero/hero2-mobile@2x.jpg 2x" width="320" height="568" alt="Изображение гор на Кавказе">
+              <img class="hero__img" src="img/hero/hero2-mobile@1x.jpg" srcset="img/hero/hero2-mobile@2x.jpg 2x" width="320" height="568" alt="Изображение гор на Кавказе" loading="lazy">
             </picture>
             <div class="hero__container wrapper">
               <h2>Невероятная природа Камчатки</h2>
@@ -90,7 +90,7 @@
               </div>
             </div>
           </div>
-          <div class="hero__slide hero__slide--three swiper-slide">
+          <div class="hero__slide hero__slide--three swiper-slide" tabindex="0" lazy="true">
             <picture>
               <source srcset="img/hero/hero3-desktop@1x.webp 1x, img/hero/hero3-desktop@2x.webp 2x" width="1440" height="800" type="image/webp" media="(min-width: 1440px)">
               <source srcset="img/hero/hero3-tablet@1x.webp 1x, img/hero/hero3-tablet@2x.webp 2x" width="768" height="1034" type="image/webp" media="(min-width: 768px)">
@@ -98,7 +98,7 @@
 
               <source srcset="img/hero/hero3-desktop@1x.jpg 1x, img/hero/hero3-desktop@2x.jpg 2x" width="1440" height="800" type="image/jpg" media="(min-width: 768px)">
               <source srcset="img/hero/hero3-tablet@1x.jpg 1x, img/hero/hero3-tablet@2x.jpg 2x" width="768" height="1034" type="image/jpg" media="(min-width: 768px)">
-              <img class="hero__img" src="img/hero/hero3-mobile@1x.jpg" srcset="img/hero/hero3-mobile@2x.jpg 2x" width="320" height="568" alt="Изображение гор на Кавказе">
+              <img class="hero__img" src="img/hero/hero3-mobile@1x.jpg" srcset="img/hero/hero3-mobile@2x.jpg 2x" width="320" height="568" alt="Изображение гор на Кавказе" loading="lazy">
             </picture>
             <div class="hero__container wrapper">
               <h2>Магические пейзажи Алтайского Края</h2>
@@ -118,11 +118,13 @@
 
   <main class="page__main">
     <!-- tours -->
-    <section class="tours" data-test="tours">
+    <section class="tours wrapper" data-test="tours">
       <h2 class="visually-hidden">Информация о ближайших турах</h2>
-      <div class="tours__header wrapper">
-        <h3 class="tours__title">Ближайшие туры</h3>
-        <span class="tours__title-back" aria-hidden="true">Ближайшие туры</span>
+      <div class="tours__header">
+        <h3 class="tours__title" data-title="Ближайшие туры">
+          Ближайшие туры
+        </h3>
+
         <div class="tours__pagination">
           <button class="tours__prev swiper-button-prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
           <button class="tours__next swiper-button-next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
@@ -133,10 +135,10 @@
 
         <div class="tours__wrapper swiper-wrapper  ">
           <!-- tours__slide1 -->
-          <div class="tours__slide tours-slide swiper-slide">
+          <div class="tours__slide tours-slide swiper-slide" tabindex="0" lazy="true">
             <picture>
               <source srcset="img/tours/tours1@1x.webp 1x, img/tours/tours1@2x.webp 2x" width="290" height="416" type="image/webp" media="(min-width: 320px)">
-              <img class="tours-slide__img" src="img/tours/tours1@1x.jpg" srcset="2img/tours/tours1@2x.jpg 2x" width="290" height="416" alt="Пейзаж около Эльбруса">
+              <img class="tours-slide__img" src="img/tours/tours1@1x.jpg" srcset="2img/tours/tours1@2x.jpg 2x" width="290" height="416" alt="Пейзаж около Эльбруса" loading="lazy">
             </picture>
             <div class="tours-slide__container">
               <div class="tours-slide__info">
@@ -172,9 +174,9 @@
             </div>
           </div>
           <!-- tours__slide2 -->
-          <div class="tours__slide tours-slide swiper-slide">
+          <div class="tours__slide tours-slide swiper-slide" tabindex="0" lazy="true">
             <picture>
-              <source srcset="img/tours/tours2@1x.webp 1x, img/tours/tours2@2x.webp 2x" width="290" height="416" type="image/webp" media="(min-width: 320px)">
+              <source srcset="img/tours/tours2@1x.webp 1x, img/tours/tours2@2x.webp 2x" width="290" height="416" type="image/webp" media="(min-width: 320px)" loading="lazy">
               <img class="tours-slide__img" src="img/tours/tours2@1x.jpg" srcset="2img/tours/tours2@2x.jpg 2x" width="290" height="416" alt="Пейзаж около Эльбруса">
             </picture>
             <div class="tours-slide__container">
@@ -211,9 +213,9 @@
             </div>
           </div>
           <!-- tours__slide3 -->
-          <div class="tours__slide tours-slide swiper-slide">
+          <div class="tours__slide tours-slide swiper-slide" tabindex="0" lazy="true">
             <picture>
-              <source srcset="img/tours/tours3@1x.webp 1x, img/tours/tours3@2x.webp 2x" width="290" height="416" type="image/webp" media="(min-width: 320px)">
+              <source srcset="img/tours/tours3@1x.webp 1x, img/tours/tours3@2x.webp 2x" width="290" height="416" type="image/webp" media="(min-width: 320px)" loading="lazy">
               <img class="tours-slide__img" src="img/tours/tours3@1x.jpg" srcset="2img/tours/tours3@2x.jpg 2x" width="290" height="416" alt="Пейзаж около Эльбруса">
             </picture>
             <div class="tours-slide__container">
@@ -250,10 +252,10 @@
             </div>
           </div>
           <!-- tours__slide4 -->
-          <div class="tours__slide tours-slide swiper-slide">
+          <div class="tours__slide tours-slide swiper-slide" tabindex="0" lazy="true">
             <picture>
               <source srcset="img/tours/tours4@1x.webp 1x, img/tours/tours4@2x.webp 2x" width="290" height="416" type="image/webp" media="(min-width: 320px)">
-              <img class="tours-slide__img" src="img/tours/tours4@1x.jpg" srcset="2img/tours/tours4@2x.jpg 2x" width="290" height="416" alt="Пейзаж около Эльбруса">
+              <img class="tours-slide__img" src="img/tours/tours4@1x.jpg" srcset="2img/tours/tours4@2x.jpg 2x" width="290" height="416" alt="Пейзаж около Эльбруса" loading="lazy">
             </picture>
             <div class="tours-slide__container">
               <div class="tours-slide__info">
@@ -295,7 +297,129 @@
       <button class="tours__button" type="button">Показать вcе туры</button>
     </section>
 
-    <div data-test="training">training</div>
+    <section class="training wrapper" data-test="training">
+      <h2 class="visually-hidden">Можно узнать, как проходит обучение</h2>
+      <h3 class="training__title" data-title="Обучение">
+        Обучение
+      </h3>
+      <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+      <article class="training__trainer trainer ">
+        <div class="trainer__header">
+          <h4 class="trainer__title">Наши инструкторы</h4>
+          <div class="trainer__pagination">
+            <button class="trainer__prev swiper-button-prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
+            <button class="trainer__next swiper-button-next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
+          </div>
+        </div>
+        <div class="trainer__swiper swiper">
+          <div class="trainer__wrapper swiper-wrapper">
+            <!-- trainer__slide1 -->
+            <div class="trainer__slide swiper-slide" tabindex="0" lazy="true">
+              <div class="trainer__wrapper">
+                <picture>
+                  <source srcset="img/trainer/trainer1@1x.webp 1x,img/trainer/trainer1@2x.webp 2x" type="image/webp" width="260" height="200" media="(min-width: 320px)">
+                  <img src="img/trainer/trainer1@1x.jpg" srcset="img/trainer/trainer1@2x.jpg 2x" width="260" height="200" alt="Александр Прокофьев" loading="lazy">
+                </picture>
+                <div>
+                  <p>Александр Прокофьев</p>
+                  <a href="#">
+                    <span class="visually-hidden">Посмотреть профиль Александра Прокофьева в контакте</span>
+                  </a>
+                </div>
+                <span>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</span>
+              </div>
+            </div>
+            <!-- trainer__slide2 -->
+            <div class="trainer__slide swiper-slide" tabindex="0" lazy="true">
+              <div class="trainer__wrapper">
+                <picture>
+                  <source srcset="img/trainer/trainer2@1x.webp 1x,img/trainer/trainer2@2x.webp 2x" type="image/webp" width="260" height="200" media="(min-width: 320px)">
+                  <img src="img/trainer/trainer2@1x.jpg" srcset="img/trainer/trainer2@2x.jpg 2x" width="260" height="200" alt="Светлана Афиногенова" loading="lazy">
+                </picture>
+                <div>
+                  <p>Светлана Афиногенова</p>
+                  <a href="#">
+                    <span class="visually-hidden">Посмотреть профиль Светланы Афиногеновы в контакте</span>
+                  </a>
+                </div>
+                <span>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</span>
+              </div>
+            </div>
+            <!-- trainer__slide3 -->
+            <div class="trainer__slide swiper-slide" tabindex="0" lazy="true">
+              <div class="trainer__wrapper">
+                <picture>
+                  <source srcset="img/trainer/trainer3@1x.webp 1x,img/trainer/trainer3@2x.webp 2x" type="image/webp" width="260" height="200" media="(min-width: 320px)">
+                  <img src="img/trainer/trainer3@1x.jpg" srcset="img/trainer/trainer3@2x.jpg 2x" width="260" height="200" alt="Надежда Колесниченко" loading="lazy">
+                </picture>
+                <div>
+                  <p>Надежда
+                    Колесниченко</p>
+                  <a href="#">
+                    <span class="visually-hidden">Посмотреть профиль Надежды
+                      Колесниченко в контакте</span>
+                  </a>
+                </div>
+                <span>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</span>
+              </div>
+            </div>
+            <!-- trainer__slide4 -->
+            <div class="trainer__slide swiper-slide" tabindex="0" lazy="true">
+              <div class="trainer__wrapper">
+                <picture>
+                  <source srcset="img/trainer/trainer4@1x.webp 1x,img/trainer/trainer4@2x.webp 2x" type="image/webp" width="260" height="200" media="(min-width: 320px)">
+                  <img src="img/trainer/trainer4@1x.jpg" srcset="img/trainer/trainer4@2x.jpg 2x" width="260" height="200" alt="Федор Кайгородов" loading="lazy">
+                </picture>
+                <div>
+                  <p>Федор Кайгородов</p>
+                  <a href="#">
+                    <span class="visually-hidden">Посмотреть профиль Федора Кайгородова в контакте</span>
+                  </a>
+                </div>
+                <span>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</span>
+              </div>
+            </div>
+            <!-- trainer__slide5 -->
+            <div class="trainer__slide swiper-slide" tabindex="0" lazy="true">
+              <div class="trainer__wrapper">
+                <picture>
+                  <source srcset="img/trainer/trainer5@1x.webp 1x,img/trainer/trainer5@2x.webp 2x" type="image/webp" width="260" height="200" media="(min-width: 320px)">
+                  <img src="img/trainer/trainer5@1x.jpg" srcset="img/trainer/trainer5@2x.jpg 2x" width="260" height="200" alt="Даниэль Васнецов" loading="lazy">
+                </picture>
+                <div>
+                  <p>Даниэль Васнецов</p>
+                  <a href="#">
+                    <span class="visually-hidden">Посмотреть профиль Даниэля Васнецова в контакте</span>
+                  </a>
+                </div>
+                <span>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+      <div class="training__process process">
+        <h5 class="process__title">Процесс обучения</h5>
+        <ul class="process__list">
+          <!-- Только для планшетной версии. При создании нового элемента списка класс с модификатором убирать, либо заменить на другой и в css: grid-area. -->
+          <li class="process__item process__item--map">
+            <p class="process__description process__description--map">Изучение спортивного туристского движения</p>
+          </li>
+          <li class="process__item process__item--boots">
+            <p class="process__description process__description--boots">Подготовка и&nbsp;техническое снаряжение в походах</p>
+          </li>
+          <li class="process__item process__item--tree">
+            <p class="process__description process__description--tree">Лекции по&nbsp;окружающей среде, экологии и гигиене</p>
+          </li>
+          <li class="process__item process__item--mountain">
+            <p class="process__description process__description--mountain">Разъяснение сложности горных препятствий</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <div data-test="about">about</div>
     <div data-test="reviews">reviews</div>
     <div data-test="adv">adv</div>
