@@ -5,10 +5,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
+    padding-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 123px;
+    padding-bottom: 110px;
   }
 }
 
@@ -159,6 +161,7 @@
   text-align: center;
   color: var(--text-secondary, #ffffff);
   overflow: hidden;
+
 
   @media (min-width: $desktop-width) {
     max-width: 380px;

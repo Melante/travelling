@@ -15,6 +15,7 @@ const toursSwiper = new Swiper('.trainer__swiper', {
     320: {
       slidesPerView: 1,
       spaceBetween:15,
+      initialSlide: 2,
     },
     768: {
       slidesPerView: 3,

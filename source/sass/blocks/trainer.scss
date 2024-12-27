@@ -120,6 +120,7 @@
   margin: 0;
   height: 356px;
   border: 1px solid var(--border-primary, rgba(2, 102, 193, 0.1));
+  background-color: var(--text-secondary, #ffffff);
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
