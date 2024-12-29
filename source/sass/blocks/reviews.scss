@@ -1,0 +1,256 @@
+.reviews {
+  min-width: 0;  // отключаем действие flex на swiper
+  padding: 0;
+  padding-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 145px;
+  }
+}
+
+.reviews__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.reviews__title {
+  position: relative;
+  min-width: 70%;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 800;
+  margin: 0;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    padding-bottom: 23px;
+  }
+}
+
+.reviews__title::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 800;
+  color: var(--text-primary, #2d383f);
+  opacity: 0.03;
+
+  @media (min-width: $tablet-width) {
+    top: -15px;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -17px;
+    font-size: 55px;
+  }
+}
+
+.reviews__pagination {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 4px;
+  }
+}
+
+.reviews__prev.swiper-button-prev,
+.reviews__next.swiper-button-next {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 6px;
+    display: flex;
+    width: 37px;
+    height: 35px;
+    padding: 0;
+    border: none;
+    background-color: var(--back-primary, #0266c1);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -1px;
+  }
+}
+
+.reviews__prev.swiper-button-prev {
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+}
+
+.reviews__next.swiper-button-next {
+  @media (min-width: $tablet-width) {
+    right: 0;
+  }
+}
+
+
+.reviews__prev.swiper-button-prev::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 9px;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-size: contain;
+    background-color: var(--border, #ffffff);
+  }
+}
+
+.reviews__next.swiper-button-next::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 9px;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--border, #ffffff);
+    transform: rotate(180deg);
+  }
+}
+
+.reviews__swiper.swiper {
+  margin: 0 auto;
+  margin-bottom: 26px;
+  min-width: 290px;
+  max-width: 100%;
+}
+
+.reviews__wrapper.swiper-wrapper {
+  padding: 0;
+
+  width: 290px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 565px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    margin-left: 115px;
+  }
+}
+
+.reviews__slide.swiper-slide {
+  margin: 15px;
+  padding: 20px;
+  max-width: 290px;
+  height: 484px;
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 186px auto;
+    gap: 30px;
+    margin: 15px;
+    padding: 20px;
+    max-width: 565px;
+    height: 277px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 258px auto;
+    max-width: 700px;
+    height: 293px;
+  }
+}
+
+.reviews__img {
+  display: block;
+  width: 250px;
+  height: 169px;
+  margin-bottom: 19px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 186px;
+    height: 237px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 258px;
+    height: 253px;
+  }
+}
+
+.reviews__slide-container div {
+  height: 224px;
+  overflow: scroll;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+    height: 185px;
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    height: 210px;
+  }
+}
+
+
+.reviews__slide-container p {
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 10px;
+  overflow: scroll;
+
+  @media (min-width: $tablet-width) {
+    //
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 1.57;
+  }
+}
+
+.reviews__slide-container p:last-child {
+  margin-bottom: 0;
+}
+
+.reviews__slide-container .reviews__name {
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 8px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+  }
+}
+
+.reviews__slide-container .reviews__age {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 300;
+  overflow: hidden;
+}

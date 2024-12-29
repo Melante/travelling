@@ -438,7 +438,91 @@
 
     </section>
 
-    <div data-test="reviews">reviews</div>
+    <section class="reviews" data-test="reviews">
+      <h2 class="visually-hidden">Участники рассказывают о своих впечатлениях</h2>
+      <div class="reviews__header wrapper">
+        <h3 class="reviews__title" data-title="Отзывы">Отзывы</h3>
+        <div class="reviews__pagination">
+          <button class="reviews__prev swiper-button-prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
+          <button class="reviews__next swiper-button-next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
+        </div>
+      </div>
+
+      <div class="reviews__swiper swiper wrapper">
+
+        <div class="reviews__wrapper swiper-wrapper">
+          <!-- slide1 -->
+          <div class="reviews__slide swiper-slide">
+            <picture>
+              <source srcset="img/reviews/photo1@1x.webp 1x, img/reviews/photo1@2x.webp 2x" width="250" height="169" type="image/webp" media="(min-width: 320px)">
+              <img class="reviews__img" src="img/reviews/photo1@1x.jpg" srcset="img/reviews/photo1@2x.jpg 2x" width="250" height="169" alt="Фролов Александр">
+            </picture>
+            <div class="reviews__slide-container">
+              <div>
+                <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие&nbsp;эксперты, всему научили, все показали. Делились историями о местах, людях, культуре места.</p>
+                <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
+              </div>
+              <p class="reviews__name">Фролов Александр</p>
+              <p class="reviews__age">38 лет, Москва</p>
+
+            </div>
+          </div>
+          <!-- slide2 -->
+          <div class="reviews__slide swiper-slide">
+            <picture>
+              <source srcset="img/reviews/photo2@1x.webp 1x, img/reviews/photo2@2x.webp 2x" width="250" height="169" type="image/webp" media="(min-width: 320px)">
+              <img class="reviews__img" src="img/reviews/photo2@1x.jpg" srcset="img/reviews/photo2@2x.jpg 2x" width="250" height="169" alt="Иван Соловьёв">
+            </picture>
+            <div class="reviews__slide-container">
+              <div>
+                <p>Хороший полноценный поход  с разнообразными локациями. В начале дорога&nbsp;идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
+                  Было очень интересно!</p>
+                <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам.
+                  Всем советую этот тур.</p>
+              </div>
+              <p class="reviews__name">Иван Соловьёв</p>
+              <p class="reviews__age">25 лет, Владивосток</p>
+
+            </div>
+          </div>
+          <!-- slide3 -->
+          <div class="reviews__slide swiper-slide">
+            <picture>
+              <source srcset="img/reviews/photo3@1x.webp 1x, img/reviews/photo3@2x.webp 2x" width="250" height="169" type="image/webp" media="(min-width: 320px)">
+              <img class="reviews__img" src="img/reviews/photo3@1x.jpg" srcset="img/reviews/photo3@2x.jpg 2x" width="250" height="169" alt="Евгения Баженова">
+            </picture>
+            <div class="reviews__slide-container">
+              <div>
+                <p>Ранее не ходила на такие длинные дистанции.&nbsp;В первый день прошли около&nbsp;30&nbsp;км,&nbsp;физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче,  чем ожидала, видимо организм уже привык.</p>
+                <p>Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
+              </div>
+              <p class="reviews__name">Евгения Баженова</p>
+              <p class="reviews__age">23 года, Кострома</p>
+
+            </div>
+          </div>
+          <!-- slide4 -->
+          <div class="reviews__slide swiper-slide">
+            <picture>
+              <source srcset="img/reviews/photo4@1x.webp 1x, img/reviews/photo4@2x.webp 2x" width="250" height="169" type="image/webp" media="(min-width: 320px)">
+              <img class="reviews__img" src="img/reviews/photo4@1x.jpg" srcset="img/reviews/photo4@2x.jpg 2x" width="250" height="169" alt="Елена Пирогова">
+            </picture>
+            <div class="reviews__slide-container">
+              <div>
+                <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось!  Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься  на вершину.</p>
+                <p>У нас собралась потрясающая команда. Все&nbsp;друг&nbsp;друга поддерживали, по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!</p>
+              </div>
+              <p class="reviews__name">Елена Пирогова</p>
+              <p class="reviews__age">37 лет, Тюмень</p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
     <div data-test="adv">adv</div>
     <div data-test="gallery">gallery</div>
     <div data-test="form">form</div>
