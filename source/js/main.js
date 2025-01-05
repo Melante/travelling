@@ -8,3 +8,4 @@ import './hero-swiper.js';
 import './tours-swiper.js';
 import './trainer-swiper.js';
 import './reviews-swiper.js';
+import './advantages-swiper.js';

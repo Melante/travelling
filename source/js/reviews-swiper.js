@@ -3,7 +3,7 @@ import 'swiper/css';
 import {Navigation, Keyboard} from 'swiper/modules';
 
 
-const toursSwiper = new Swiper('.reviews__swiper', {
+const reviewsSwiper = new Swiper('.reviews__swiper', {
   modules: [Navigation, Keyboard],
   direction: 'horizontal',
   speed: 500,
@@ -19,9 +19,7 @@ const toursSwiper = new Swiper('.reviews__swiper', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-
       centeredSlides: 1,
-
     },
     768: {
       slidesPerView: 'auto',
@@ -35,4 +33,4 @@ const toursSwiper = new Swiper('.reviews__swiper', {
   },
 });
 
-toursSwiper.slideReset();
+reviewsSwiper.slideReset();

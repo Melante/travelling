@@ -5,10 +5,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
+    padding-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 145px;
+    padding-bottom: 101px;
   }
 }
 
@@ -130,7 +132,7 @@
 
 .reviews__swiper.swiper {
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 6px;
   min-width: 290px;
   max-width: 100%;
 }
