@@ -296,7 +296,7 @@
       </div>
       <button class="tours__button" type="button">Показать вcе туры</button>
     </section>
-
+    <!-- training -->
     <section class="training wrapper" data-test="training">
       <h2 class="visually-hidden">Можно узнать, как проходит обучение</h2>
       <h3 class="training__title" data-title="Обучение">
@@ -419,7 +419,7 @@
         </ul>
       </div>
     </section>
-
+    <!-- about -->
     <section class="about" data-test="about">
       <h2 class="visually-hidden">Информация о нашей компании и наших целях</h2>
       <picture>
@@ -437,7 +437,7 @@
       </div>
 
     </section>
-
+    <!-- reviews -->
     <section class="reviews" data-test="reviews">
       <h2 class="visually-hidden">Участники рассказывают о своих впечатлениях</h2>
       <div class="reviews__header wrapper">
@@ -522,7 +522,7 @@
 
       </div>
     </section>
-
+    <!-- advantages -->
     <section class="advantages wrapper" data-test="adv">
       <h2 class="visually-hidden">Плюсы при выборе нас для походов</h2>
 
@@ -542,7 +542,7 @@
           <div class="advantages__slide swiper-slide">
             <div class="advantages__card advantages__card-crown">
               <h4>Экспертиза и знания</h4>
-              <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
+              <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.<br> Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
             </div>
           </div>
           <!-- slide3 -->
@@ -574,13 +574,105 @@
         <button class="advantages__next swiper-button-next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
       </div>
     </section>
+    <!-- gallery -->
+    <section class="gallery" data-test="gallery">
+      <h2 class="visually-hidden">Посмотреть фотографии с наших экскурсий</h2>
 
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
+      <div class="gallery__header wrapper">
+        <div class="gallery__header-container">
+          <h3 class="gallery__title" data-title="Фотогалерея">Фотогалерея</h3>
+          <p>Добавляйте фото с хэштегом #лайфтур, а&nbsp;также&nbsp;отмечайте нас на фото.
+            Лучшие фотографии украсят этот раздел нашего сайта.</p>
+        </div>
+        <div class="gallery__pagination">
+          <button class="gallery__prev swiper-button-prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
+          <button class="gallery__next swiper-button-next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
+        </div>
+      </div>
+      <div class="gallery__swiper swiper">
+
+        <div class="gallery__wrapper swiper-wrapper">
+          <!-- slide1 -->
+          <div class="gallery__slide swiper-slide">
+            <picture>
+              <source srcset="img/gallery/photo1@1x.webp 1x,img/gallery/photo1@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
+              <img class="gallery__img" src="img/gallery/photo1@1x.jpg" srcset="img/gallery/photo1@2x.jpg 2x" width="157" height="266" alt="Александр Прокофьев" loading="lazy">
+            </picture>
+          </div>
+          <!-- slide2 -->
+          <div class="gallery__slide gallery__slide-small swiper-slide">
+            <picture>
+              <source srcset="img/gallery/photo2@1x.webp 1x,img/gallery/photo2@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
+              <img class="gallery__img gallery__img-small gallery__img-small--top " src="img/gallery/photo2@1x.jpg" srcset="img/gallery/photo2@2x.jpg 2x" width="157" height="269" alt="Александр Прокофьев" loading="lazy">
+            </picture>
+            <picture>
+              <source srcset="img/gallery/photo3@1x.webp 1x,img/gallery/photo3@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
+              <img class="gallery__img gallery__img-small gallery__img-small--bottom" src="img/gallery/photo3@1x.jpg" srcset="img/gallery/photo3@2x.jpg 2x" width="157" height="269" alt="Александр Прокофьев" loading="lazy">
+            </picture>
+          </div>
+          <!-- slide3 -->
+          <div class="gallery__slide swiper-slide">
+            <picture>
+              <source srcset="img/gallery/photo4@1x.webp 1x,img/gallery/photo4@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
+              <img class="gallery__img" src="img/gallery/photo4@1x.jpg" srcset="img/gallery/photo4@2x.jpg 2x" width="157" height="266" alt="Александр Прокофьев" loading="lazy">
+            </picture>
+          </div>
+          <!-- slide4 -->
+          <div class="gallery__slide gallery__slide-small swiper-slide">
+            <picture>
+              <source srcset="img/gallery/photo5@1x.webp 1x,img/gallery/photo5@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
+              <img class="gallery__img gallery__img-small gallery__img-small--top " src="img/gallery/photo5@1x.jpg" srcset="img/gallery/photo5@2x.jpg 2x" width="157" height="269" alt="Александр Прокофьев" loading="lazy">
+            </picture>
+            <picture>
+              <source srcset="img/gallery/photo6@1x.webp 1x,img/gallery/photo6@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
+              <img class="gallery__img gallery__img-small gallery__img-small--bottom" src="img/gallery/photo6@1x.jpg" srcset="img/gallery/photo6@2x.jpg 2x" width="157" height="269" alt="Александр Прокофьев" loading="lazy">
+            </picture>
+          </div>
+          <!-- slide5 -->
+          <div class="gallery__slide swiper-slide">
+            <picture>
+              <source srcset="img/gallery/photo7@1x.webp 1x,img/gallery/photo7@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
+              <img class="gallery__img" src="img/gallery/photo7@1x.jpg" srcset="img/gallery/photo7@2x.jpg 2x" width="157" height="266" alt="Александр Прокофьев" loading="lazy">
+            </picture>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- form -->
+    <section class="form" data-test="form">
+      <h2 class="visually-hidden">Оставьте свой номер телефона и почту, чтобы мы объяснили подробнее о турах</h2>
+      <div class="form__container">
+        <h3>Остались вопросы?</h3>
+        <p>Заполните&nbsp;форму&nbsp;и&nbsp;наш&nbsp;оператор свяжется с&nbsp;вами&nbsp;для&nbsp;консультации.</p>
+        <form class="form__wrapper" action="https://echo.htmlacademy.ru" method="post">
+          <label class="form__label" for="phone-id">
+
+            <input class="form__input" type="phone" name="phone" id="phone-id" placeholder="+7 (000)-000-00-00" required>
+            <span class="form__description">Телефон</span>
+          </label>
+          <label class="form__label" for="email-id">
+
+            <input class="form__input" type="email" name="email" id="email-id" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).рф" required>
+            <span class="form__description">Email</span>
+          </label>
+          <button class="form__button" type="submit">Отправить</button>
+        </form>
+      </div>
+
+    </section>
 
   </main>
-  <footer class="page__footer">
-    <div data-test="footer">footer</div>
+  <footer class="page__footer" data-test="footer">
+    <section class="contact">
+      <h2 class="visually-hidden">Узнайте способы как связаться с нами,а также карта где мы находимся</h2>
+      <div class="contact__container">
+        <h3 class="contact__title" data-title="Контакты">Контакты</h3>
+        <p></p>
+      </div>
+      <div class="contacts__map"></div>
+    </section>
   </footer>
 
   <script src="js/vendor/swiper-bundle.js" defer="defer"></script>
