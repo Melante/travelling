@@ -31,14 +31,15 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 183px;
+    padding-top: 182px;
+    padding-bottom: 183px;
     width: 55%;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 294px;
-    padding-bottom: 292px;
+    padding-bottom: 291px;
     width: 71%;
   }
 }
