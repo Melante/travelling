@@ -1,16 +1,17 @@
 .advantages {
   min-width: 0;  // отключаем действие flex на swiper
-  padding-top: 36px;
+  padding-top: 37px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
-    padding-bottom: 21px;
+    padding-top: 60px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-top: 100px;
-    padding-bottom: 103px;
+    padding-top: 135px;
+    padding-bottom: 99px;
   }
 }
 
@@ -40,7 +41,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -16px;
+  top: -14px;
   font-size: 26px;
   line-height: 1;
   font-weight: 800;
@@ -61,7 +62,7 @@
 
 .advantages__swiper.swiper {
   margin: 0 auto;
-  margin-bottom: 26px;
+
   min-width: 290px;
   max-width: 100%;
 
@@ -83,17 +84,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     gap: 0;
-    margin-bottom: 47px;
+    padding-bottom: 73px;
   }
 }
 
@@ -179,24 +176,25 @@
 
 .advantages__card-shield > h4::before {
   background-image: url("/__spritemap#sprite-shield-view");
+  background-size: 22px;
 }
 
 .advantages__card-crown > h4::before {
   background-image: url("/__spritemap#sprite-crown-view");
 
-  // background-size: 24px 22px;
+  background-size: 24px 22px;
 }
 
 .advantages__card-outfit > h4::before {
   background-image: url("/__spritemap#sprite-outfit-view");
 
-  // background-size: 24px 20px;
+  background-size: 24px 20px;
 }
 
 .advantages__card-path > h4::before {
   background-image: url("/__spritemap#sprite-path-view");
 
-  // background-size: 24px 24px;
+  background-size: 24px 24px;
 }
 
 .advantages__card-leaf > h4::before {

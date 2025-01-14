@@ -34,29 +34,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   resizableSwiper(
-    '(max-width: 768px)',
-    '.gallery__swiper',
-    {
-      modules: [Navigation, Keyboard],
-      direction: 'horizontal',
-      speed: 500,
-      loop: true,
-      navigation: {
-        nextEl: '.gallery__next',
-        prevEl: '.gallery__prev',
-      },
-      keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-        pageUpDown: true,
-      },
-
-      slidesPerView: 2,
-      spaceBetween:6,
-    }
-  );
-
-  resizableSwiper(
     '(max-width: 1399px)',
     '.gallery__swiper',
     {
@@ -74,11 +51,18 @@ window.addEventListener('DOMContentLoaded', () => {
         pageUpDown: true,
       },
 
-      slidesPerView: 3,
-      spaceBetween:6,
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween:6,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween:5,
+        }
+      }
     }
   );
-
 });
 
 

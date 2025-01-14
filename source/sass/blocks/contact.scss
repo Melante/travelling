@@ -156,7 +156,7 @@
 }
 
 .contact__item-address::before {
-  background-image: url("/__spritemap#sprite-pin-view");
+  background-image: url("/__spritemap#sprite-adds-view");
 }
 
 .contact__name {
@@ -170,7 +170,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     font-size: 16px;
-    margin-left: 34px;
+    margin-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -193,7 +193,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 1.57;
-    margin-left: 34px;
+    margin-left: 35px;
     margin-top: 6px;
   }
 

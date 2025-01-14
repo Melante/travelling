@@ -47,6 +47,7 @@
     <section class="hero" data-test="hero">
       <div class="hero__swiper swiper">
         <div class="hero__wrapper swiper-wrapper">
+          <!-- slide1 -->
           <div class="hero__slide hero__slide--one swiper-slide" tabindex="0" lazy="true">
             <picture>
               <source srcset="img/hero/hero1-desktop@1x.webp 1x, img/hero/hero1-desktop@2x.webp 2x" width="1440" height="800" type="image/webp" media="(min-width: 1440px)">
@@ -70,6 +71,7 @@
               </div>
             </div>
           </div>
+          <!-- slide2 -->
           <div class="hero__slide hero__slide--two swiper-slide" tabindex="0" lazy="true">
             <picture>
               <source srcset="img/hero/hero2-desktop@1x.webp 1x, img/hero/hero2-desktop@2x.webp 2x" width="1440" height="800" type="image/webp" media="(min-width: 1440px)">
@@ -90,6 +92,7 @@
               </div>
             </div>
           </div>
+          <!-- slide3 -->
           <div class="hero__slide hero__slide--three swiper-slide" tabindex="0" lazy="true">
             <picture>
               <source srcset="img/hero/hero3-desktop@1x.webp 1x, img/hero/hero3-desktop@2x.webp 2x" width="1440" height="800" type="image/webp" media="(min-width: 1440px)">
@@ -424,14 +427,17 @@
       <h2 class="visually-hidden">Информация о нашей компании и наших целях</h2>
       <picture>
         <source srcset="img/about/group-tourists-desktop@1x.webp 1x, img/about/group-tourists-desktop@2x.webp 2x" type="image/webp" width="660" height="498" media="(min-width: 1440px)">
-        <source srcset="img/about/group-tourists@1x.webp 1x, img/about/group-tourists@2x.webp 2x" type="image/webp" width="320" height="400" media="(min-width: 320px)">
+        <source srcset="img/about/group-tourists-tablet@1x.webp 1x, img/about/group-tourists-tablet@2x.webp 2x" type="image/webp" width="450px" height="350px" media="(min-width: 768px)">
+        <source srcset="img/about/group-tourists-mobile@1x.webp 1x, img/about/group-tourists-mobile@2x.webp 2x" type="image/webp" width="320" height="400" media="(min-width: 320px)">
+
         <source srcset="img/about/group-tourists-desktop@1x.jpg 1x, img/about/group-tourists-desktop@2x.jpg 2x" type="image/jpeg" width="660" height="498" media="(min-width: 1440px)">
-        <img src="img/about/group-tourists@1x.jpg" srcset="img/about/group-tourists@2x.jpg 2x" width="320" height="400" alt="Группа туристов спускается по горной вершине" loading="lazy">
+        <source srcset="img/about/group-tourists-tablet@1x.jpg 1x, img/about/group-tourists-tablet@2x.jpg 2x" type="image/jpeg" width="450px" height="350px" media="(min-width: 768px)">
+        <img src="img/about/group-tourists-mobile@1x.jpg" srcset="img/about/group-tourists-mobile@2x.jpg 2x" width="320" height="400" alt="Группа туристов спускается по горной вершине">
       </picture>
       <div>
         <h3 data-title="О нас">О нас</h3>
         <h4>История компании</h4>
-        <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам&nbsp;это&nbsp;настолько понравилось, что&nbsp;мы&nbsp;этим стали&nbsp;жить. Спустя&nbsp;5 лет, в&nbsp;2005&nbsp;году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+        <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам&nbsp;это&nbsp;настолько понравилось, что&nbsp;мы&nbsp;этим стали&nbsp;жить. Спустя&nbsp;5&nbsp;лет, в&nbsp;2005&nbsp;году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
         <h4>Наша цель</h4>
         <p>Подарить вам незабываемые впечатления от похода в горы. Мы&nbsp;берём на себя все&nbsp;организационные вопросы. При&nbsp;организации мы&nbsp;обязательно учтём все&nbsp;ваши пожелания. Вам&nbsp;останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
       </div>
@@ -475,7 +481,7 @@
             </picture>
             <div class="reviews__slide-container">
               <div>
-                <p>Хороший полноценный поход  с разнообразными локациями. В начале дорога&nbsp;идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
+                <p>Хороший полноценный поход с разнообразными локациями. В начале дорога&nbsp;идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
                   Было очень интересно!</p>
                 <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам.
                   Всем советую этот тур.</p>
@@ -493,7 +499,7 @@
             </picture>
             <div class="reviews__slide-container">
               <div>
-                <p>Ранее не ходила на такие длинные дистанции.&nbsp;В первый день прошли около&nbsp;30&nbsp;км,&nbsp;физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче,  чем ожидала, видимо организм уже привык.</p>
+                <p>Ранее не ходила на такие длинные дистанции.&nbsp;В первый день прошли около&nbsp;30&nbsp;км,&nbsp;физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче, чем ожидала, видимо организм уже привык.</p>
                 <p>Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
               </div>
               <p class="reviews__name">Евгения Баженова</p>
@@ -509,7 +515,7 @@
             </picture>
             <div class="reviews__slide-container">
               <div>
-                <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось!  Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься  на вершину.</p>
+                <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.</p>
                 <p>У нас собралась потрясающая команда. Все&nbsp;друг&nbsp;друга поддерживали, по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!</p>
               </div>
               <p class="reviews__name">Елена Пирогова</p>
@@ -542,7 +548,7 @@
           <div class="advantages__slide swiper-slide">
             <div class="advantages__card advantages__card-crown">
               <h4>Экспертиза и знания</h4>
-              <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.<br> Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
+              <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это&nbsp;гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
             </div>
           </div>
           <!-- slide3 -->
@@ -562,7 +568,7 @@
           <!-- slide5 -->
           <div class="advantages__slide swiper-slide">
             <div class="advantages__card advantages__card-leaf">
-              <h4>Бережное отношение  к&nbsp;природе</h4>
+              <h4>Бережное отношение к&nbsp;природе</h4>
               <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
             </div>
           </div>
@@ -595,44 +601,65 @@
           <!-- slide1 -->
           <div class="gallery__slide swiper-slide">
             <picture>
-              <source srcset="img/gallery/photo1@1x.webp 1x,img/gallery/photo1@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
-              <img class="gallery__img" src="img/gallery/photo1@1x.jpg" srcset="img/gallery/photo1@2x.jpg 2x" width="157" height="266" alt="Александр Прокофьев" loading="lazy">
+              <source srcset="img/gallery/photo1-desktop@1x.webp 1x,img/gallery/photo1-desktop@2x.webp 2x" type="image/webp" width="284" height="463" media="(min-width: 1440px)">
+              <source srcset="img/gallery/photo1-tablet@1x.webp 1x,img/gallery/photo1-tablet@2x.webp 2x" type="image/webp" width="260" height="418" media="(min-width: 768px)">
+              <source srcset="img/gallery/photo1-mobile@1x.webp 1x,img/gallery/photo1-mobile@2x.webp 2x" type="image/webp" width="157" height="266" media="(min-width: 320px)">
+
+              <source srcset="img/gallery/photo1-desktop@1x.jpg 1x,img/gallery/photo1-desktop@2x.jpg 2x" type="image/jpeg" width="284" height="463" media="(min-width: 1440px)">
+              <source srcset="img/gallery/photo1-tablet@1x.jpg 1x,img/gallery/photo1-tablet@2x.jpg 2x" type="image/jpeg" width="260" height="418" media="(min-width: 768px)">
+              <img class="gallery__img" src="img/gallery/photo1-mobile@1x.jpg" srcset="img/gallery/photo1-mobile@2x.jpg 2x" width="157" height="266" alt="Мужчина стоит на краю скалы на фоне гор">
             </picture>
           </div>
           <!-- slide2 -->
           <div class="gallery__slide gallery__slide-small swiper-slide">
             <picture>
-              <source srcset="img/gallery/photo2@1x.webp 1x,img/gallery/photo2@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
-              <img class="gallery__img gallery__img-small gallery__img-small--top " src="img/gallery/photo2@1x.jpg" srcset="img/gallery/photo2@2x.jpg 2x" width="157" height="269" alt="Александр Прокофьев" loading="lazy">
+              <source srcset="img/gallery/photo2-desktop@1x.webp 1x,img/gallery/photo2-desktop@2x.webp 2x" type="image/webp" width="284" height="233" media="(min-width: 1440px)">
+              <source srcset="img/gallery/photo2-tablet@1x.webp 1x,img/gallery/photo2-tablet@2x.webp 2x" type="image/webp" width="260" height="205" media="(min-width: 768px)">
+              <source srcset="img/gallery/photo2-mobile@1x.webp 1x,img/gallery/photo2-mobile@2x.webp 2x" type="image/webp" width="157" height="133" media="(min-width: 320px)">
+
+              <source srcset="img/gallery/photo2-desktop@1x.jpg 1x,img/gallery/photo2-desktop@2x.jpg 2x" type="image/jpeg" width="284" height="233" media="(min-width: 1440px)">
+              <source srcset="img/gallery/photo2-tablet@1x.jpg 1x,img/gallery/photo2-tablet@2x.jpg 2x" type="image/jpeg" width="260" height="205" media="(min-width: 768px)">
+              <img class="gallery__img" src="img/gallery/photo2-mobile@1x.jpg" srcset="img/gallery/photo2-mobile@2x.jpg 2x" width="157" height="133" alt="Группа туристов сидит ночью у костра">
             </picture>
             <picture>
-              <source srcset="img/gallery/photo3@1x.webp 1x,img/gallery/photo3@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
-              <img class="gallery__img gallery__img-small gallery__img-small--bottom" src="img/gallery/photo3@1x.jpg" srcset="img/gallery/photo3@2x.jpg 2x" width="157" height="269" alt="Александр Прокофьев" loading="lazy">
+              <source srcset="img/gallery/photo3-desktop@1x.webp 1x,img/gallery/photo3-desktop@2x.webp 2x" type="image/webp" width="284" height="233" media="(min-width: 1440px)">
+              <source srcset="img/gallery/photo3-tablet@1x.webp 1x,img/gallery/photo3-tablet@2x.webp 2x" type="image/webp" width="260" height="205" media="(min-width: 768px)">
+              <source srcset="img/gallery/photo3-mobile@1x.webp 1x,img/gallery/photo3-mobile@2x.webp 2x" type="image/webp" width="157" height="133" media="(min-width: 320px)">
+
+              <source srcset="img/gallery/photo3-desktop@1x.jpg 1x,img/gallery/photo3-desktop@2x.jpg 2x" type="image/jpeg" width="284" height="233" media="(min-width: 1440px)">
+              <source srcset="img/gallery/photo3-tablet@1x.jpg 1x,img/gallery/photo3-tablet@2x.jpg 2x" type="image/jpeg" width="260" height="205" media="(min-width: 768px)">
+              <img class="gallery__img" src="img/gallery/photo2-mobile@1x.jpg" srcset="img/gallery/photo2-mobile@2x.jpg 2x" width="157" height="133" alt="В руке держат компас на фоне гор">
             </picture>
           </div>
           <!-- slide3 -->
           <div class="gallery__slide swiper-slide">
             <picture>
-              <source srcset="img/gallery/photo4@1x.webp 1x,img/gallery/photo4@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
-              <img class="gallery__img" src="img/gallery/photo4@1x.jpg" srcset="img/gallery/photo4@2x.jpg 2x" width="157" height="266" alt="Александр Прокофьев" loading="lazy">
+              <source srcset="img/gallery/photo4-desktop@1x.webp 1x,img/gallery/photo4-desktop@2x.webp 2x" type="image/webp" width="284" height="463" media="(min-width: 1440px)">
+              <source srcset="img/gallery/photo4-tablet@1x.webp 1x,img/gallery/photo4-tablet@2x.webp 2x" type="image/webp" width="157" height="266" media="(min-width: 320px)">
+
+              <source srcset="img/gallery/photo4-desktop@1x.jpg 1x,img/gallery/photo4-desktop@2x.jpg 2x" type="image/jpeg" width="284" height="463" media="(min-width: 1440px)">
+              <img class="gallery__img" src="img/gallery/photo4-tablet@1x.jpg" srcset="img/gallery/photo4-tablet@2x.jpg 2x" width="157" height="266" alt="Группа спускается по горной тропе, держась за канатную дорогу">
             </picture>
           </div>
           <!-- slide4 -->
           <div class="gallery__slide gallery__slide-small swiper-slide">
             <picture>
-              <source srcset="img/gallery/photo5@1x.webp 1x,img/gallery/photo5@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
-              <img class="gallery__img gallery__img-small gallery__img-small--top " src="img/gallery/photo5@1x.jpg" srcset="img/gallery/photo5@2x.jpg 2x" width="157" height="269" alt="Александр Прокофьев" loading="lazy">
+              <source srcset="img/gallery/photo5-desktop@1x.webp 1x,img/gallery/photo5-desktop@2x.webp 2x" type="image/webp" width="157" height="133" media="(min-width: 320px)">
+
+              <img class="gallery__img" src="img/gallery/photo5-desktop@1x.jpg" srcset="img/gallery/photo5-desktop@2x.jpg 2x" width="157" height="133" alt="Группа туристов идет по краю замерзшего ручья">
             </picture>
             <picture>
-              <source srcset="img/gallery/photo6@1x.webp 1x,img/gallery/photo6@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
-              <img class="gallery__img gallery__img-small gallery__img-small--bottom" src="img/gallery/photo6@1x.jpg" srcset="img/gallery/photo6@2x.jpg 2x" width="157" height="269" alt="Александр Прокофьев" loading="lazy">
+              <source srcset="img/gallery/photo6-desktop@1x.webp 1x,img/gallery/photo6-desktop@2x.webp 2x" type="image/webp" width="157" height="133" media="(min-width: 320px)">
+
+              <img class="gallery__img" src="img/gallery/photo6-desktop@1x.jpg" srcset="img/gallery/photo6-desktop@2x.jpg 2x" width="157" height="133" alt="Палатка ночью">
             </picture>
           </div>
           <!-- slide5 -->
           <div class="gallery__slide swiper-slide">
             <picture>
-              <source srcset="img/gallery/photo7@1x.webp 1x,img/gallery/photo7@2x.webp 2x" type="image/webp" width="157" height="269" media="(min-width: 320px)">
-              <img class="gallery__img" src="img/gallery/photo7@1x.jpg" srcset="img/gallery/photo7@2x.jpg 2x" width="157" height="266" alt="Александр Прокофьев" loading="lazy">
+              <source srcset="img/gallery/photo7-desktop@1x.webp 1x,img/gallery/photo7-desktop@2x.webp 2x" type="image/webp" width="157" height="266" media="(min-width: 320px)">
+
+              <img class="gallery__img" src="img/gallery/photo7-desktop@1x.jpg" srcset="img/gallery/photo7-desktop@2x.jpg 2x" width="157" height="266" alt="Туристы на берегу озера у костра">
             </picture>
           </div>
 
@@ -690,11 +717,11 @@
         <picture>
           <source srcset="img/map/map-desktop@1x.webp 1x, img/map/map-desktop@2x.webp 2x" type="image/webp" width="600" height="324" media="(min-width: 1440px)">
           <source srcset="img/map/map-tablet@1x.webp 1x, img/map/map-tablet@2x.webp 2x" type="image/webp" width="768" height="340" media="(min-width: 768px)">
-          <source srcset="img/map/map-mobile@1x.webp, img/map/map-mobile@1x.webp 2x" type="image/webp" width="320" height="343" min-width="320px">
+          <source srcset="img/map/map-mobile@1x.webp, img/map/map-mobile@2x.webp 2x" type="image/webp" width="320" height="343" min-width="320px">
 
           <source srcset="img/map/map-desktop@1x.png 1x, img/map/map-desktop@2x.png 2x" type="image/png" width="600" height="324" media="(min-width: 1440px)">
           <source srcset="img/map/map-tablet@1x.png 1x, img/map/map-tablet@2x.png 2x" type="image/png" width="768" height="340" media="(min-width: 768px)">
-          <img class="contact__map-img" src="img/map/map-mobile@1x.png" srcset="img/map/map-mobile@1x.png 2x" width="320" height="343" alt="г. Москва, пр-т Мира, д. 14, офис 101" loading="lazy">
+          <img class="contact__map-img" src="img/map/map-mobile@1x.png" srcset="img/map/map-mobile@2x.png 2x" width="320" height="343" alt="г. Москва, пр-т Мира, д. 14, офис 101">
         </picture>
       </div>
     </section>

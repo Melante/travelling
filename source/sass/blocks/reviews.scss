@@ -1,16 +1,16 @@
 .reviews {
   min-width: 0;  // отключаем действие flex на swiper
   padding: 0;
-  padding-top: 31px;
+  padding-top: 37px;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
-    padding-bottom: 39px;
+    padding-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 145px;
-    padding-bottom: 101px;
+    padding-bottom: 66px;
   }
 }
 
@@ -45,7 +45,7 @@
   content: attr(data-title);
   display: block;
   position: absolute;
-  top: -16px;
+  top: -14px;
   left: 0;
   font-size: 26px;
   line-height: 1;
@@ -59,7 +59,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -17px;
+    top: --39px;
     font-size: 55px;
   }
 }
@@ -156,7 +156,9 @@
 
 .reviews__slide.swiper-slide {
   margin: 15px;
+  margin-bottom: 14px;
   padding: 20px;
+
   max-width: 290px;
   height: 484px;
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
@@ -223,11 +225,9 @@
   margin-bottom: 10px;
   overflow: scroll;
 
-  @media (min-width: $tablet-width) {
-    //
-  }
 
   @media (min-width: $desktop-width) {
+    max-width: 95%;
     font-size: 14px;
     line-height: 1.57;
   }

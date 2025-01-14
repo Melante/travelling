@@ -1,13 +1,13 @@
 .gallery {
   min-width: 0;  // отключаем действие flex на swiper
-  padding-top: 31px;
+  padding-top: 37px;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 119px;
+    padding-top: 123px;
   }
 }
 
@@ -26,7 +26,7 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.57;
     width: 70%;
@@ -51,7 +51,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -133,7 +133,7 @@
     content: "";
     display: block;
     width: 15px;
-    height: 9px;
+    height: 10px;
     mask-image: url("/__spritemap#sprite-arrow-view");
     mask-size: contain;
     background-color: var(--border, #ffffff);
@@ -145,7 +145,7 @@
     content: "";
     display: block;
     width: 15px;
-    height: 9px;
+    height: 10px;
     mask-image: url("/__spritemap#sprite-arrow-view");
     mask-size: contain;
     mask-repeat: no-repeat;
@@ -156,17 +156,18 @@
 
 .gallery__swiper.swiper {
   margin: 0 auto;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
   min-width: 290px;
   max-width: 100%;
 }
 
 .gallery__wrapper.swiper-wrapper {
   padding: 0;
-  width: 290px;
+  width: 100%;
 
 
   @media (min-width: $tablet-width) {
+    gap: 0;
     width: 100%;
   }
 
@@ -177,17 +178,18 @@
 }
 
 .gallery__slide.swiper-slide {
-  max-width: 290px;
+  width: 157px;
   height: 266px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    max-width: 260px;
-    height: 420px;
+    width: 251px;
+    height: 418px;
   }
 
   @media (min-width: $desktop-width) {
+    flex-basis: 284px;
     max-width: 284px;
     height: 463px;
   }
@@ -196,12 +198,14 @@
 .gallery__slide-small.swiper-slide {
   display: grid;
   align-content: space-between;
-  grid-template-rows: 135px 127px;
+  grid-template-rows: 135px 125px;
   gap: 5px;
   overflow: hidden;
   width: 157px;
 
   @media (min-width: $tablet-width) {
+    gap: 6px;
+    grid-template-rows: auto auto;
     width: 253px;
   }
 
@@ -224,11 +228,6 @@
     width: 284px;
   }
 }
-
-// .gallery__img-small {
-//   display: block;
-//   object-fit: cover;
-// }
 
 .gallery__img-small--top {
   width: 100%;
