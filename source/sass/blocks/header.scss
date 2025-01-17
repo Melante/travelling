@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 3;
   background-color: var(--back-primary, #0266c1);
   color: var(--text-secondary, #ffffff);
 }
@@ -108,6 +110,7 @@
   margin: 0;
   margin-bottom: 16px;
   padding: 0;
+  object-fit: contain;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -123,10 +126,12 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
-    gap: 31px;
+    gap: 21px;
     margin: 0;
     margin-left: 31px;
+    margin-bottom: 1px;
     padding: 0;
   }
 }
@@ -148,7 +153,7 @@
   margin: 0;
   margin-right: -15px;
   list-style-type: none;
-  z-index: 2;
+  z-index: 11;
 
   @media (min-width: $tablet-width) {
     top: 80px;
@@ -164,16 +169,19 @@
 }
 
 .header__item {
+  max-width: 120px;
   margin: 0;
   padding: 0;
 }
 
 .header__item a {
+  position: relative;
   font-size: 14px;
   line-height: 1;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-weight: 700;
+  padding: 3px 5px;
   text-decoration: none;
   color: var(--text-secondary, #ffffff);
 
@@ -186,9 +194,44 @@
     text-transform: none;
     letter-spacing: 0;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: var(--border, #ffffff);
+    transform: scaleX(0);
+    transition: all 0.6s ease;
+    bottom: 0;
+    left: 0;
+  }
+
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
+
+  &:focus::before {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid var(--border, #ffffff);
+  }
+
+  &:active {
+    color: var(--text-dark, #1c3374);
+  }
+
+  &:disabled,
+  &--disabled {
+    color: var(--disabled, #999999);
+  }
 }
 
+
 .header__phone {
+  max-width: 180px;
   font-size: 14px;
   line-height: 1;
   font-weight: 600;
@@ -202,5 +245,24 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+  }
+
+  &:hover::before {
+    color: var(--back-primary-light, rgba(255, 255, 255, 0.5));
+  }
+
+  &:focus::before {
+    color: var(--text-primary, #2d383f);
+  }
+
+  &:active {
+    color: var(--text-dark, #1c3374);
+  }
+
+  &:disabled,
+  &--disabled {
+    color: var(--disabled, #999999);
+    pointer-events: none;
+    cursor: none;
   }
 }

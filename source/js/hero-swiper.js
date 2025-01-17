@@ -9,9 +9,11 @@ const heroSwiper = new Swiper('.hero__swiper', {
   loop: true,
   speed: 500,
   slidesPerView: 1,
-  centeredSlides: 1,
   pagination: {
     el: '.hero__pagination',
+    bulletClass: 'hero__pagination-bullet',
+    bulletActiveClass: 'hero__pagination-bullet--active',
+    clickable: true
   },
   breakpoints: {
     1440: {

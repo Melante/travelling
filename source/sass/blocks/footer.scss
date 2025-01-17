@@ -55,9 +55,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 30px;
+    gap: 20px;
     margin: 0;
     margin-left: 29px;
+    margin-bottom: -2px;
   }
 }
 
@@ -76,7 +77,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 30px;
+    gap: 20px;
   }
 }
 
@@ -90,6 +91,8 @@
 }
 
 .footer__item a {
+  position: relative;
+  padding: 3px 5px;
   text-decoration: none;
   color: var(--text-primary, #2d383f);
   font-size: 14px;
@@ -97,6 +100,41 @@
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    background: var(--border-dark, #2d383f);
+    transition: all 0.6s ease;
+    bottom: 0;
+    left: 0;
+  }
+
+
+  &:hover::before {
+    width: 100%;
+    height: 1px;
+    transform: scaleX(1);
+  }
+
+  &:focus::before {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid var(--border-dark, #2d383f);
+    z-index: -1;
+  }
+
+  &:active {
+    color: var(--back-primary, #0266c1);
+  }
+
+  &:disabled {
+    color: var(--disabled, #999999);
   }
 }
 
@@ -111,6 +149,25 @@
     font-weight: 600;
     color: var(--text-primary, #2d383f);
     text-decoration: none;
+  }
+
+  &:hover {
+    color: var(--text-light, rgba(2, 102, 193, 0.1));
+  }
+
+  &:focus {
+    color: var(--text-primary-light, #0266c1);
+  }
+
+  &:active {
+    color: var(--text-dark, #1c3374);
+  }
+
+  &:disabled,
+  &--disabled {
+    color: var(--disabled, #999999);
+    pointer-events: none;
+    cursor: none;
   }
 }
 
@@ -138,6 +195,24 @@
   width: 30px;
   height: 30px;
   border: 1px solid  rgba(45, 56, 63, 0.3);
+
+  &:hover {
+    border: 1px solid var(--border-dark, #2d383f);
+  }
+
+  &:focus {
+    border: none;
+  }
+
+  &:active {
+    background-color: var(--back-primary, #0266c1);
+  }
+
+  &:disabled,
+  &--disabled {
+    border: 1px solid var(--disabled, #999999);
+    pointer-events: none;
+  }
 }
 
 .footer__social-link::before {
@@ -164,6 +239,15 @@
 
 .footer__social-link--reddit {
   --icon-social: url("/__spritemap#sprite-reddit-view");
+}
+
+.footer__social-link:active::before {
+  background-color: var(--back-light, #ffffff);
+}
+
+.footer__social-link:disabled::before,
+.footer__social-link--disabled::before {
+  background-color: var(--disabled, #999999);
 }
 
 .footer__confid {

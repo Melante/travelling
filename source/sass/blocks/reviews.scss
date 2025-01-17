@@ -59,7 +59,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: --39px;
+    top: -39px;
     font-size: 55px;
   }
 }
@@ -76,57 +76,11 @@
 .reviews__prev.swiper-button-prev,
 .reviews__next.swiper-button-next {
   @media (min-width: $tablet-width) {
-    position: relative;
     top: 6px;
-    display: flex;
-    width: 37px;
-    height: 35px;
-    padding: 0;
-    border: none;
-    background-color: var(--back-primary, #0266c1);
   }
 
   @media (min-width: $desktop-width) {
     top: -1px;
-  }
-}
-
-.reviews__prev.swiper-button-prev {
-  @media (min-width: $tablet-width) {
-    left: 0;
-  }
-}
-
-.reviews__next.swiper-button-next {
-  @media (min-width: $tablet-width) {
-    right: 0;
-  }
-}
-
-
-.reviews__prev.swiper-button-prev::after {
-  @media (min-width: $tablet-width) {
-    content: "";
-    display: block;
-    width: 15px;
-    height: 9px;
-    mask-image: url("/__spritemap#sprite-arrow-view");
-    mask-size: contain;
-    background-color: var(--border, #ffffff);
-  }
-}
-
-.reviews__next.swiper-button-next::after {
-  @media (min-width: $tablet-width) {
-    content: "";
-    display: block;
-    width: 15px;
-    height: 9px;
-    mask-image: url("/__spritemap#sprite-arrow-view");
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    background-color: var(--border, #ffffff);
-    transform: rotate(180deg);
   }
 }
 
@@ -158,10 +112,10 @@
   margin: 15px;
   margin-bottom: 14px;
   padding: 20px;
-
   max-width: 290px;
   height: 484px;
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+  background-color: var(--back-light, #ffffff);
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
@@ -176,6 +130,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 258px auto;
+    padding-top: 19px;
     max-width: 700px;
     height: 293px;
   }
@@ -202,7 +157,7 @@
 
 .reviews__slide-container div {
   height: 224px;
-  overflow: scroll;
+  overflow: auto;
 
   @media (min-width: $tablet-width) {
     margin-top: 3px;
@@ -216,6 +171,9 @@
   }
 }
 
+.reviews__slide-container {
+  overflow: auto;
+}
 
 .reviews__slide-container p {
   font-size: 12px;
@@ -223,11 +181,11 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 10px;
-  overflow: scroll;
+  overflow: auto;
 
 
   @media (min-width: $desktop-width) {
-    max-width: 95%;
+    margin-right: 10px;
     font-size: 14px;
     line-height: 1.57;
   }

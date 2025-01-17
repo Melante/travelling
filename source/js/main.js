@@ -10,4 +10,5 @@ import './trainer-swiper.js';
 import './reviews-swiper.js';
 import './advantages-swiper.js';
 import './gallery-swiper.js';
+import './form-validation.js';
 

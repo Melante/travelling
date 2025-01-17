@@ -97,6 +97,7 @@
 .advantages__slide.swiper-slide {
   padding: 19px 9px;
   border: 1px solid var(--border-primary, rgba(2, 102, 193, 0.1));
+  background-color: var(--back-light, #ffffff);
 
   @media (min-width: $tablet-width) {
     padding: 29px 19px 28px;
@@ -199,8 +200,6 @@
 
 .advantages__card-leaf > h4::before {
   background-image: url("/__spritemap#sprite-leaf-view");
-
-  // background-size: 24px 18px;
 }
 
 .advantages__card > p {
@@ -227,56 +226,7 @@
 
 .advantages__prev.swiper-button-prev,
 .advantages__next.swiper-button-next {
-  @media (min-width: $tablet-width) {
-    position: relative;
-    display: flex;
-    width: 37px;
-    height: 35px;
-    padding: 0;
-    border: none;
-    background-color: var(--back-primary, #0266c1);
-  }
-
   @media (min-width: $desktop-width) {
     top: -1px;
-  }
-}
-
-.advantages__prev.swiper-button-prev {
-  @media (min-width: $tablet-width) {
-    left: 0;
-  }
-}
-
-.advantages__next.swiper-button-next {
-  @media (min-width: $tablet-width) {
-    right: 0;
-  }
-}
-
-
-.advantages__prev.swiper-button-prev::after {
-  @media (min-width: $tablet-width) {
-    content: "";
-    display: block;
-    width: 15px;
-    height: 9px;
-    mask-image: url("/__spritemap#sprite-arrow-view");
-    mask-size: contain;
-    background-color: var(--border, #ffffff);
-  }
-}
-
-.advantages__next.swiper-button-next::after {
-  @media (min-width: $tablet-width) {
-    content: "";
-    display: block;
-    width: 15px;
-    height: 9px;
-    mask-image: url("/__spritemap#sprite-arrow-view");
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    background-color: var(--border, #ffffff);
-    transform: rotate(180deg);
   }
 }

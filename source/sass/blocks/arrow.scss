@@ -1,0 +1,96 @@
+
+
+.arrow__swiper-prev.swiper-button-prev,
+.arrow__swiper-next.swiper-button-next {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    width: 37px;
+    height: 35px;
+    padding: 0;
+    border: none;
+    background-color: var(--back-primary, #0266c1);
+  }
+
+  &:hover {
+    background-color: var(--back-light, #ffffff);
+    outline: 1px solid var(--border-secondary-dark, #1c3374);
+  }
+
+  &:focus {
+    background-color: var(--back-light, #ffffff);
+    outline: none;
+  }
+
+  &:active {
+    background-color: var(--back-primary-dark, #1c3374);
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: var(--disabled, #999999);
+  }
+}
+
+.arrow__swiper-prev.swiper-button-prev {
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+}
+
+.arrow__swiper-next.swiper-button-next {
+  @media (min-width: $tablet-width) {
+    right: 0;
+  }
+}
+
+.arrow__swiper-prev.swiper-button-prev::after,
+.arrow__swiper-next.swiper-button-next::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 9px;
+  }
+}
+
+.arrow__swiper-prev.swiper-button-prev:hover::after,
+.arrow__swiper-next.swiper-button-next:hover::after {
+  background-color: var(--text-dark, #1c3374);
+}
+
+.arrow__swiper-prev.swiper-button-prev:focus::after,
+.arrow__swiper-next.swiper-button-next:focus::after {
+  background-color: var(--text-dark, #1c3374);
+}
+
+.arrow__swiper-prev.swiper-button-prev:active::after,
+.arrow__swiper-next.swiper-button-next:active::after,
+.arrow__swiper-prev.swiper-button-prev:disabled::after,
+.arrow__swiper-next.swiper-button-next:disabled::after {
+  background-color: var(--border, #ffffff);
+}
+
+
+.arrow__swiper-prev.swiper-button-prev::after {
+  @media (min-width: $tablet-width) {
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--border, #ffffff);
+  }
+}
+
+.arrow__swiper-next.swiper-button-next::after {
+  @media (min-width: $tablet-width) {
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--border, #ffffff);
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: var(--text-dark, #1c3374);
+  }
+}

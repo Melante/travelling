@@ -38,14 +38,7 @@
 .trainer__prev.swiper-button-prev,
 .trainer__next.swiper-button-next {
   @media (min-width: $tablet-width) {
-    position: relative;
     top: -6px;
-    display: flex;
-    width: 37px;
-    height: 35px;
-    padding: 0;
-    border: none;
-    background-color: var(--back-primary, #0266c1);
   }
 
   @media (min-width: $desktop-width) {
@@ -53,44 +46,6 @@
   }
 }
 
-.trainer__prev.swiper-button-prev {
-  @media (min-width: $tablet-width) {
-    left: 0;
-  }
-}
-
-.trainer__next.swiper-button-next {
-  @media (min-width: $tablet-width) {
-    right: 0;
-  }
-}
-
-
-.trainer__prev.swiper-button-prev::after {
-  @media (min-width: $tablet-width) {
-    content: "";
-    display: block;
-    width: 15px;
-    height: 9px;
-    mask-image: url("/__spritemap#sprite-arrow-view");
-    mask-size: contain;
-    background-color: var(--border, #ffffff);
-  }
-}
-
-.trainer__next.swiper-button-next::after {
-  @media (min-width: $tablet-width) {
-    content: "";
-    display: block;
-    width: 15px;
-    height: 9px;
-    mask-image: url("/__spritemap#sprite-arrow-view");
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    background-color: var(--border, #ffffff);
-    transform: rotate(180deg);
-  }
-}
 
 .trainer__swiper.swiper {
   margin: 0 auto;
@@ -182,6 +137,24 @@
   margin: 0;
   padding: 0;
   border: 1px solid var(--border-primary-dark, rgba(45, 56, 63, 0.3));
+
+  &:hover {
+    border: 1px solid var(--border-dark, #2d383f);
+  }
+
+  &:focus {
+    border: none;
+  }
+
+  &:active {
+    background-color: var(--back-primary, #0266c1);
+  }
+
+  &:disabled,
+  &--disabled {
+    border: 1px solid var(--disabled, #999999);
+    pointer-events: none;
+  }
 }
 
 .trainer__wrapper a::before {
@@ -198,10 +171,18 @@
   background-color: var(--text-primary, #2d383f);
 }
 
+.trainer__wrapper a:active::before {
+  background-color: var(--back-light, #ffffff);
+}
+
+.trainer__wrapper a:disabled::before {
+  background-color: var(--disabled, #999999);
+}
+
 .trainer__wrapper span {
   display: block;
   height: 65px;
-  overflow: scroll;
+  overflow: auto;
   font-size: 12px;
   line-height: 1.33;
 

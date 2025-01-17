@@ -79,30 +79,11 @@
 .tours__prev.swiper-button-prev,
 .tours__next.swiper-button-next {
   @media (min-width: $tablet-width) {
-    position: relative;
     top: -2px;
-    display: flex;
-    width: 37px;
-    height: 35px;
-    padding: 0;
-    border: none;
-    background-color: var(--back-primary, #0266c1);
   }
 
   @media (min-width: $desktop-width) {
     top: -17px;
-  }
-}
-
-.tours__prev.swiper-button-prev {
-  @media (min-width: $tablet-width) {
-    left: 0;
-  }
-}
-
-.tours__next.swiper-button-next {
-  @media (min-width: $tablet-width) {
-    right: 0;
   }
 }
 
@@ -152,6 +133,7 @@
 
 .tours__wrapper.swiper-wrapper {
   padding: 0;
+
 }
 
 
@@ -159,6 +141,7 @@
   min-width: 290px;
   height: 416px;
   text-align: center;
+
   color: var(--text-secondary, #ffffff);
   overflow: hidden;
 
@@ -184,6 +167,25 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
   }
+
+  &:hover {
+    color: var(--text-light, rgba(2, 102, 193, 0.1));
+  }
+
+  &:focus {
+    color: var(--text-primary-light, #0266c1);
+  }
+
+  &:active {
+    color: var(--text-dark, #1c3374);
+  }
+
+  &:disabled,
+  &--disabled {
+    color: var(--disabled, #999999);
+    pointer-events: none;
+    cursor: none;
+  }
 }
 
 .tours__button::after {
@@ -197,3 +199,20 @@
   background-color: var(--text-primary, #2d383f);
 }
 
+
+.tours__button:hover::after {
+  background-color: var(--text-light, rgba(2, 102, 193, 0.1));
+}
+
+.tours__button:focus::after {
+  background-color: var(--text-primary-light, #0266c1);
+}
+
+.tours__button:active::after {
+  background-color: var(--text-dark, #1c3374);
+}
+
+.tours__button:disabled::after,
+.tours__button--disabled::after {
+  background-color: var(--disabled, #999999);
+}
