@@ -133,18 +133,17 @@
 
 .tours__wrapper.swiper-wrapper {
   padding: 0;
-
 }
 
 
 .tours__slide.swiper-slide {
+  display: grid;
+  justify-items: center;
   min-width: 290px;
   height: 416px;
   text-align: center;
-
   color: var(--text-secondary, #ffffff);
   overflow: hidden;
-
 
   @media (min-width: $desktop-width) {
     max-width: 380px;

@@ -140,8 +140,9 @@
 }
 
 .form__description:focus {
-  opacity: 0;
+  display: none;
 }
+
 
 .form__input {
   position: relative;
@@ -177,25 +178,15 @@
   outline: 1px solid var(--error, #ff121f);
 }
 
+
 .form__input--error {
   border: none;
   outline: 1px solid var(--error, #ff121f);
 }
 
-.form__error {
+.form__input:focus + .form__description,
+.form__input:not(:placeholder-shown) + .form__description {
   display: none;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  left: 0;
-  font-size: 14px;
-  line-height: 1;
-  margin-top: 5px;
-  color: var(--error, #ff121f);
-}
-
-.form__error--active {
-  display: block;
 }
 
 .form__button {

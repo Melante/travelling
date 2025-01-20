@@ -2,16 +2,40 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import {Navigation, Keyboard} from 'swiper/modules';
 
+const swiperWrapper = document.querySelector('.advantages__wrapper');
+const slides = swiperWrapper.querySelectorAll('.advantages__slide');
+
+let isSlidesDuplicated = false;
+
+function duplicateSlides() {
+  if (isSlidesDuplicated) {
+    return;
+  }
+
+  slides.forEach((slide) => {
+    const clonedSlide = slide.cloneNode(true);
+    clonedSlide.classList.add('cloned');
+    swiperWrapper.appendChild(clonedSlide);
+  });
+
+  isSlidesDuplicated = true;
+}
+
+if (window.innerWidth >= 1440) {
+  duplicateSlides();
+}
+
 window.addEventListener('DOMContentLoaded', () => {
+
 
   const resizableSwiper = (breakpoint, swiperClass, swiperSettings, callback) => {
     let swiper;
+
 
     breakpoint = window.matchMedia(breakpoint);
 
     const enableSwiper = function(className, settings) {
       swiper = new Swiper(className, settings);
-
       if (callback) {
         callback(swiper);
       }
@@ -50,33 +74,16 @@ window.addEventListener('DOMContentLoaded', () => {
         onlyInViewport: true,
         pageUpDown: true,
       },
-      initialSlide: 1,
-      slidesPerView: 3,
-      centeredSlides: false,
+      initialSlide: 2,
+      slidesPerView: 'auto',
+      slidesPerGroup: 2,
+      centeredSlides: true,
       spaceBetween:30,
+      loopAddBlankSlides: false,
+
     }
   );
 
 });
-
-// const advantagesSwiper = new Swiper('.advantages__swiper', {
-//   breakpoints: {
-//     1366: {
-//       modules: [Navigation, Keyboard],
-//       direction: 'horizontal',
-//       speed: 500,
-//       navigation: {
-//         nextEl: '.advantages__next',
-//         prevEl: '.advantages__prev',
-//       },
-//       keyboard: {
-//         enabled: true,
-//         onlyInViewport: true,
-//         pageUpDown: true,
-//       },
-//       slidesPerView: 'auto',
-//       spaceBetween:105,
-//     },
-//   },// });
 
 

@@ -1,11 +1,12 @@
-
+.tours-slide {
+  position: relative;
+}
 
 .tours-slide.swiper-slide::after {
   content: "";
   display: block;
   position: absolute;
   top: 0;
-  left: 0;
   width: 290px;
   height: 100%;
   background: var(--overlay-card, linear-gradient(0deg, rgba(0, 0, 0, 0.6) 24%, transparent 51%));
@@ -41,8 +42,16 @@
   bottom: 0;
   z-index: 1;
   display: grid;
-  width: 100%;
+  width: 290px;
   padding: 31px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+  }
 }
 
 .tours-slide__info {

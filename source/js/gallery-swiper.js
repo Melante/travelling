@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   resizableSwiper(
-    '(max-width: 1399px)',
+    '(max-width: 1439px)',
     '.gallery__swiper',
     {
       modules: [Navigation, Keyboard],

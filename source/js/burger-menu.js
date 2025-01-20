@@ -8,7 +8,11 @@ button.onclick = function() {
   menu.classList.toggle('header__nav-open');
   menuBurger.classList.toggle('header__button-close');
   body.classList.toggle('page__body-menu');
-  body.style.overflow = 'hidden';
+  if (menu.classList.contains('header__nav-open')) {
+    body.style.overflow = 'hidden';
+  } else {
+    body.style.overflow = '';
+  }
 };
 
 menuItem.forEach((item) => {

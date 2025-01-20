@@ -21,7 +21,7 @@ const toursSwiper = new Swiper('.tours__swiper', {
       spaceBetween:18,
 
     },
-    1366: {
+    1440: {
       slidesPerView: 3,
       spaceBetween:30,
       keyboard: {

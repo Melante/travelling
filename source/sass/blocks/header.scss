@@ -57,6 +57,7 @@
   height: 2px;
   left: 0;
   background-color: var(--button-burger, #ffffff);
+  transition: all 0.5s ease;
 }
 
 .header__button-open {
@@ -75,6 +76,7 @@
 .header__button-close {
   width: 0;
   height: 2px;
+  transition: all 0.5s ease;
 }
 
 .header__button-close::before {
@@ -123,6 +125,8 @@
 
 .header__nav {
   display: none;
+  top: -100px;
+  transition: all 0.5s ease;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -144,16 +148,16 @@
   gap: 7px;
   text-align: start;
   height: auto;
-  width: 105vw;
+  width: 100vw;
   background-color: var(--back-primary, #0266c1);
   padding: 0;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 47px;
   margin: 0;
-  margin-right: -15px;
   list-style-type: none;
   z-index: 11;
+  transition: all 0.5s ease;
 
   @media (min-width: $tablet-width) {
     top: 80px;
@@ -169,9 +173,12 @@
 }
 
 .header__item {
-  max-width: 120px;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    max-width: 120px;
+  }
 }
 
 .header__item a {
